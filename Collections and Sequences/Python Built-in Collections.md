@@ -90,7 +90,7 @@ In the table `s` is an instance of a mutable sequence type, `t` is any iterable 
 `tuple()` constructor can take a tuple, list or range as input to construct a tuple.
 Tuples can be given as input iterators to `list()` constructor to construct a list.
 
-Parenthesis without arguments i.e. `()` initialise an empty list.
+Empty parenthesis`()` without arguments or the `tuple()` constructor without arguments initialise an empty tuple.
 
 #### `string`
 
@@ -102,7 +102,7 @@ String literals that are part of a single expression and have only whitespace be
 
 Strings implement all of the common sequence operations, along with additional methods of String class.
 
-Empty quotes of any type, `''`, `""` or `""""""` initialise an empty string.
+Empty quotes of any type, `''`, `""` or `""""""` , or `str()` constructor without arguments initialise an empty string.
 
 #### `range`
 
@@ -225,6 +225,8 @@ Counter class is similar to bags or multisets in other languages.
 #### `collections.defaultdict(default_factory=None, /[, ...])`
 
 If `defauly_factory` argument is not `None`, `defaultdict` is used to provide some default values for the key that does not exist and never raises a `KeyError`. However, if `defauly_factory` argument is `None`,  it behaves like a standard dictionary and raises a KeyError exception with the key as argument. The behavior for missing keys is defined by the method `__missing__(key)`.
+
+Regular dictionaries can be used to implement same kind of functionality using `dict.get(key, [default])` function. If a default value is given, and the input key does not exist, then the default value is retured.
 
 #### `collections.OrderedDict([items])`
 
