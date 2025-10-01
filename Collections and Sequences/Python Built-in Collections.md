@@ -92,6 +92,33 @@ Tuples can be given as input iterators to `list()` constructor to construct a li
 
 Empty parenthesis`()` without arguments or the `tuple()` constructor without arguments initialise an empty tuple.
 
+**Initialising tuples:**
+
+**Initialising non-empty tuples:**
+
+- A non-empty tuple can be initialised by giving a sequence of values and/or variables as input to `()` or `tuple()`, or by assigning a comma separated sequence of values to a variable.
+- `()` can take input sequence directly -> `(1,2,3,4,6, "Hello", 0)` is a tuple in itself.
+- `tuple()`constructor takes a sequence as its single argument as input -> `tuple((1,2,3,4,6, "Hello", 0))` generates an actual tuple.
+
+**Initialising empty tuples:**
+
+- Empty parenthesis`()` without arguments or the `tuple()` constructor without arguments initialise an empty tuple.
+- An empty tuple can also be created by inputting an empty sequence of any type as argument to `tuple()`constructor or `()`.
+
+**Initialising singleton tuples:**
+`()` with single argument doesnt create a tuple, but rather returns that argument as it is.
+To initialise a singleton tuple, it is required to initialise with the argument and then a comma, to indicate the creation of tuple.
+
+- A singleton tuple can be initialised as `(x,)` where x is any value or variable.
+- A singleton tuple can be initialised as `tuple((x,))` where x is any value or variable.
+- Assigning a comma separated sequence of values to a variable initialises it as a tuple -> `1,2,3,4,"Hello", 0` is a tuple
+- A singleton tuple can be initialised as `x,` where x is any value or variable.
+
+**Mutability of tuple elements:**
+
+- It is not possible to modify items of a tuple, however it is possible to create tuples which contain mutable objects, such as lists.
+  Reference: [Python Docs](https://docs.python.org/3/tutorial/datastructures.html)
+
 #### `string`
 
 Strings are immutable sequences of Unicode code points.
